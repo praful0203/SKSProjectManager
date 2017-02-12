@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.praful.sksprojectmanager.LoginActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/inputUserName"
+        android:hint="Username"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/inputPassword"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:layout_below="@+id/inputUserName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/gradient"
+        android:textColor="@android:color/background_light"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/inputPassword"
+        android:layout_marginTop="40dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="150dp"
+        app:srcCompat="@drawable/sk"
+        android:id="@+id/imageView"
+        android:layout_height="150dp"
+        android:layout_marginTop="49dp"
+        android:contentDescription="@string/app_name"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+
