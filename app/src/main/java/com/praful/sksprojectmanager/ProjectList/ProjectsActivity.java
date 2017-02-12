@@ -14,7 +14,7 @@ public class ProjectsActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private static final String[] job_id={"Job ID :101","Job ID:\t102","Job ID:\t103","Job ID:\t104","JobID:105","Job ID:106","Job ID:107","Job ID:108","Job ID:109","Job ID:110","Job ID:111","Job ID:112"};
+    private static final String[] job_id={"Job ID : 101","Job ID :\t102","Job ID : \t103","Job ID : \t104","JobID : \t105","Job ID : \t106","Job ID : \t107","Job ID : \t108","Job ID : \t109","Job ID : \t110","Job ID : \t111","Job ID : \t112"};
     private static final String[] created_by={"Created By:Paarshtouch","Created By:Praful","Created By:AneshKumar","Created By:Paarshtouch","Created By:Dharmesh","Created By:Sharyu","Created By:Paarshtouch","Created By:Praful","Created By:AneshKumar","Created By:Paarshtouch","Created By:Dharmesh","Created By:Sharyu"};
     TextView txtJobId,txtCreatedBy;
     @Override

@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:weightSum="1">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@android:drawable/ic_menu_edit"
+        android:paddingLeft="10dp"
+        android:translationY="53dp"
+        android:contentDescription="@string/app_name"/>
     <TextView
         android:text="Job ID :"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:paddingBottom="2dp"
         android:paddingTop="16dp"
@@ -16,17 +21,22 @@
         android:paddingLeft="16dp"
         android:id="@+id/txtJobId"
         android:textSize="18sp"
-        android:gravity="fill_vertical" />
+        android:gravity="fill_vertical"
+        android:translationX="44dp"/>
 
     <TextView
             android:text="Created by:"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingTop="0dp"
             android:id="@+id/txtCreatedBy"
-            android:layout_weight="0.68"
+        android:translationX="44dp"
         android:textSize="12sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_title" />
 </LinearLayout>
