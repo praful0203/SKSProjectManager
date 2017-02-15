@@ -21,7 +21,8 @@
         android:textCursorDrawable="@color/colorPrimaryDark"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:textColorHint="@android:color/white" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -36,7 +37,9 @@
         android:textCursorDrawable="@color/colorPrimaryDark"
         android:layout_below="@+id/inputUserName"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
 
     <Button
         android:layout_width="wrap_content"
@@ -52,10 +55,10 @@
         android:layout_alignStart="@+id/imageView" />
 
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         app:srcCompat="@drawable/sk"
         android:id="@+id/imageView"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_marginTop="49dp"
         android:contentDescription="@string/app_name"
         android:layout_below="@+id/btnLogin"

@@ -1,10 +1,17 @@
 package com.praful.sksprojectmanager.ProjectList;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.praful.sksprojectmanager.R;
@@ -17,10 +24,13 @@ public class ProjectsActivity extends AppCompatActivity {
     private static final String[] job_id={"Job ID : 101","Job ID :\t102","Job ID : \t103","Job ID : \t104","JobID : \t105","Job ID : \t106","Job ID : \t107","Job ID : \t108","Job ID : \t109","Job ID : \t110","Job ID : \t111","Job ID : \t112"};
     private static final String[] created_by={"Created By:Paarshtouch","Created By:Praful","Created By:AneshKumar","Created By:Paarshtouch","Created By:Dharmesh","Created By:Sharyu","Created By:Paarshtouch","Created By:Praful","Created By:AneshKumar","Created By:Paarshtouch","Created By:Dharmesh","Created By:Sharyu"};
     TextView txtJobId,txtCreatedBy;
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projects);
+        GestureDetector mGestureDetector;
+        AdapterView.OnItemClickListener mListener;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
@@ -31,6 +41,15 @@ public class ProjectsActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         txtJobId = (TextView)findViewById(R.id.txtJobId);
         txtCreatedBy = (TextView)findViewById(R.id.txtCreatedBy);
+
+        recyclerView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Intent intent = new Intent(getApplicationContext(),DashBoardActivity.class);
+                startActivity(intent);
+                return false;
+            }
+        });
 
     }
 

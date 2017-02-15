@@ -21,6 +21,11 @@
             android:theme="@style/MyTheme">
 
         </activity>
+        <activity android:name=".ProjectList.DashBoardActivity"
+                  android:label="Dash Board"
+                  android:theme="@style/Base.Theme.AppCompat.Light">
+
+        </activity>
     </application>
 
 </manifest>

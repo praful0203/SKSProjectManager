@@ -46,4 +46,5 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             Tx_createdby = (TextView)itemView.findViewById(R.id.txtCreatedBy);
         }
     }
+
 }
