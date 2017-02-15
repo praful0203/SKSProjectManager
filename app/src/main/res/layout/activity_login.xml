@@ -41,19 +41,6 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:id="@+id/btnLogin"
-        android:background="@drawable/gradient"
-        android:textColor="@android:color/background_light"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_below="@+id/inputPassword"
-        android:layout_marginTop="40dp"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
-
     <ImageView
         android:layout_width="200dp"
         app:srcCompat="@drawable/sk"
@@ -63,6 +50,19 @@
         android:contentDescription="@string/app_name"
         android:layout_below="@+id/btnLogin"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/gradient_loginbtn"
+        android:textColor="@android:color/background_light"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/inputPassword"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 
 
 </RelativeLayout>

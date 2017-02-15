@@ -8,8 +8,7 @@ import android.widget.TextView;
 
 import com.praful.sksprojectmanager.R;
 
-/**
- * Created by prafu on 12-02-2017.
+/* Created by prafu on 12-02-2017.
  */
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder> {
