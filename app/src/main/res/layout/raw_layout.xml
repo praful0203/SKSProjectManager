@@ -1,42 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:weightSum="1">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:src="@android:drawable/ic_menu_edit"
-        android:paddingLeft="10dp"
-        android:translationY="53dp"
-        android:contentDescription="@string/app_name"/>
-    <TextView
-        android:text="Job ID :"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:paddingBottom="2dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingLeft="16dp"
-        android:id="@+id/txtJobId"
-        android:textSize="18sp"
-        android:gravity="fill_vertical"
-        android:translationX="44dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
 
-    <TextView
-            android:text="Created by:"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="0dp"
-            android:id="@+id/txtCreatedBy"
-        android:translationX="44dp"
-        android:textSize="12sp" />
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imgIcon"
+            android:contentDescription="@string/app_name"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:text="Job ID : "
+            android:layout_marginStart="12dp"
+            android:id="@+id/Jobid"
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/imgIcon"
+            android:layout_toEndOf="@+id/imgIcon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:text=""
+            android:id="@+id/TxJobid"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/Jobid"
+            android:layout_alignBottom="@+id/Jobid"
+            android:layout_toEndOf="@+id/Jobid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CreatedBy"
+            android:text="Created By : "
+            android:textSize="12sp"
+            android:layout_below="@+id/Jobid"
+            android:layout_alignStart="@+id/Jobid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxCreatedBy"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/CreatedBy"
+            android:layout_alignBottom="@+id/CreatedBy"
+            android:layout_toEndOf="@+id/CreatedBy" />
+
+
+    </RelativeLayout>
+
+
     <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@color/color_title" />
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@color/color_title"
+    android:id="@+id/view" />
+
+
+
 </LinearLayout>

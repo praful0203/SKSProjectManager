@@ -1,5 +1,6 @@
 package com.praful.sksprojectmanager.ProjectList;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,17 +13,19 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.praful.sksprojectmanager.R;
 
 public class ProjectsActivity extends AppCompatActivity {
 
+    private Context ct;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private static final String[] job_id={"Job ID : 101","Job ID :\t102","Job ID : \t103","Job ID : \t104","JobID : \t105","Job ID : \t106","Job ID : \t107","Job ID : \t108","Job ID : \t109","Job ID : \t110","Job ID : \t111","Job ID : \t112"};
-    private static final String[] created_by={"Created By:Paarshtouch","Created By:Praful","Created By:AneshKumar","Created By:Paarshtouch","Created By:Dharmesh","Created By:Sharyu","Created By:Paarshtouch","Created By:Praful","Created By:AneshKumar","Created By:Paarshtouch","Created By:Dharmesh","Created By:Sharyu"};
+    private static final String[] job_id={"101","102","103","104","105","106","107","108","109","110","111","112"};
+    private static final String[] created_by={"Paarshtouch","Praful","AneshKumar","Paarshtouch","Dharmesh","Sharyu","Paarshtouch","Praful","AneshKumar","Paarshtouch","Dharmesh","Sharyu"};
     TextView txtJobId,txtCreatedBy;
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -39,17 +42,10 @@ public class ProjectsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
-        txtJobId = (TextView)findViewById(R.id.txtJobId);
-        txtCreatedBy = (TextView)findViewById(R.id.txtCreatedBy);
+        txtJobId = (TextView)findViewById(R.id.TxJobid);
+        txtCreatedBy = (TextView)findViewById(R.id.TxCreatedBy);
 
-        recyclerView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                Intent intent = new Intent(getApplicationContext(),DashBoardActivity.class);
-                startActivity(intent);
-                return false;
-            }
-        });
+
 
     }
 
