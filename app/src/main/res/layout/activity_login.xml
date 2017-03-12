@@ -64,6 +64,15 @@
         android:layout_alignStart="@+id/imageView"
         android:layout_alignEnd="@+id/imageView" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:progressTint="@android:color/white" />
+
 
 </RelativeLayout>
 
