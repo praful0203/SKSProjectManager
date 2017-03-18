@@ -5,4 +5,5 @@
     <color name="colorAccent">#607D8B</color>
     <color name="color_title">#ffffff</color>
     <color name="yellow_material">#e3c800</color>
+    <color name="toolbar_color">#134E5E</color>
 </resources>
